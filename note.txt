@@ -1,0 +1,3 @@
+Cài Node.js và npm.
+Tạo tài khoản Imgur và lấy Client ID từ https://api.imgur.com.
+Thêm hình template (ví dụ: drake.jpg, distracted.jpg) vào public/assets/templates/ và sticker (ví dụ: sunglasses.png, fire.png) vào public/assets/stickers/.
