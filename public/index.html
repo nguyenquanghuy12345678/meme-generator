@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Meme Generator 🚀</h1>
+    <div class="editor">
+      <div class="sidebar">
+        <h2>Templates</h2>
+        <div class="template-list">
+          <img src="assets/templates/drake.jpg" alt="Drake Hotline Bling" class="template" data-id="drake">
+          <img src="assets/templates/distracted.jpg" alt="Distracted Boyfriend" class="template" data-id="distracted">
+        </div>
+        <h2>Upload Template</h2>
+        <input type="file" id="custom-template" accept="image/*">
+        <h2>Text Layers</h2>
+        <div id="text-layers"></div>
+        <button id="add-text">Add Text</button>
+        <h2>Stickers</h2>
+        <div class="sticker-list">
+          <img src="assets/stickers/sunglasses.png" class="sticker" data-id="sunglasses">
+          <img src="assets/stickers/fire.png" class="sticker" data-id="fire">
+        </div>
+      </div>
+      <div class="canvas-container">
+        <canvas id="meme-canvas"></canvas>
+        <div id="text-boxes"></div>
+      </div>
+      <div class="controls">
+        <h2>Text Settings</h2>
+        <label>Text: <input type="text" id="text-input" placeholder="Enter meme text"></label>
+        <label>Font: <select id="font-select">
+          <option value="Arial">Arial</option>
+          <option value="Impact">Impact</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+        </select></label>
+        <label>Size: <input type="number" id="font-size" value="30" min="10" max="100"></label>
+        <label>Color: <input type="color" id="text-color" value="#ffffff"></label>
+        <label>Stroke: <input type="color" id="stroke-color" value="#000000"></label>
+        <label>Shadow: <input type="checkbox" id="shadow-toggle"></label>
+        <button id="suggest-caption">Suggest Caption</button>
+        <button id="download-meme">Download Meme</button>
+        <button id="share-imgur">Share to Imgur</button>
+      </div>
+    </div>
+    <div class="gallery">
+      <h2>Community Memes</h2>
+      <div id="meme-gallery"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
